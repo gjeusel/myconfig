@@ -13,12 +13,6 @@ setopt inc_append_history share_history hist_ignore_all_dups  # history
 setopt autocd extendedglob notify nomatch autopushd pushdignoredups promptsubst
 
 autoload -Uz compinit
-# Check compinit cache once per day
-if [ $(date +'%j') != $(/usr/bin/stat -f '%Sm' -t '%j' ${ZDOTDIR:-$HOME}/.zcompdump) ]; then
-  compinit
-else
-  compinit -C
-fi
 
 # Plugins
 antigen use oh-my-zsh
@@ -42,10 +36,6 @@ antigen bundle gcloud
 antigen bundle kubectl
 #antigen bundle dbz/kube-aliases
 
-
-# Python:
-antigen bundle pip
-antigen bundle esc/conda-zsh-completion
 
 # Golang:
 #antigen bundle golang

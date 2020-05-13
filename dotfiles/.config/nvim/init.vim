@@ -45,7 +45,6 @@ call plug#begin(s:plugin_dir)
   Plug 'tpope/vim-eunuch'          " sugar for the UNIX shell commands
   Plug 'tpope/vim-fugitive'        " Git wrapper for vim
 
-  Plug 'Konfekt/FastFold', { 'branch': 'master' } " update folds only when needed, otherwise folds slowdown vim
   Plug 'zhimsel/vim-stay'                " adds automated view session creation and restoration whenever editing a buffer
   Plug 'junegunn/vim-easy-align'         " easy alignment, better than tabularize
   Plug 'jiangmiao/auto-pairs'            " auto pair
@@ -67,7 +66,6 @@ call plug#begin(s:plugin_dir)
 
   " Plug 'vim-scripts/loremipsum'         " dummy text generator (:Loremipsum [number of words])
   " Plug 'easymotion/vim-easymotion'      " easymotion when fedup to think
-  " Plug 'skywind3000/asyncrun.vim'       " run async shell commands
   " Plug 'terryma/vim-multiple-cursors'   " nice plugin for multiple cursors
 "}}}
 
@@ -90,52 +88,10 @@ call plug#begin(s:plugin_dir)
   Plug 'ryanoasis/vim-devicons'  " nice icons added
 " }}}
 
-" Completion {{{
-  Plug 'ervandew/supertab' " use <Tab> for all your insert completion
-  Plug 'Shougo/deoplete.nvim'  " async engine
-
-  Plug 'Shougo/neco-vim', {'for': 'vim'}
-  Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
-  Plug 'deoplete-plugins/deoplete-go', {'for': 'go'}
-  Plug 'fszymanski/deoplete-emoji', {'for': 'gitcommit'}
-  Plug 'carlitux/deoplete-ternjs', {'do': 'npm install -g tern', 'for': ['javascript', 'vue']}
-" }}}
-
-" Every
-  "Plug 'sheerun/vim-polyglot'  " Solid syntax and indentation support
-
-" Code Style
-  "Plug 'Shougo/echodoc.vim', {'for': 'python'} " displays function signatures from completions in the command line.
-  Plug 'w0rp/ale'  " general asynchronous syntax checker
-
-" Python
-  Plug 'tmhedberg/SimpylFold', {'for': 'python'}  " better folds
-  Plug 'davidhalter/jedi-vim', {'for': ['python', 'markdown', 'rst']}
-  Plug 'python-mode/python-mode', {'for': 'python'}
-
-" Frontend
-  Plug 'mattn/emmet-vim'
-  Plug 'alvan/vim-closetag'  " autoclose tags
-  Plug 'ap/vim-css-color', {'for': 'css'}  " change bg color in css for colors
-  Plug 'Glench/Vim-Jinja2-Syntax'
-
-" Golang
-  Plug 'fatih/vim-go', {'for': 'go'}
-
-" Vuejs
-  Plug 'posva/vim-vue', {'for': 'vue'}  " syntax highlight for .vue file
-
 " markdown & rst
   Plug 'dhruvasagar/vim-table-mode'                    " to easily create tables.
   Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }           " Distraction-free writing in Vim
   Plug 'junegunn/limelight.vim', { 'on': 'Limelight' } " Dim paragraphs above and below the active paragraph.
-
-" Terraform
-  Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
-
-" Latex
-  Plug 'lervag/vimtex', { 'for': 'tex' }
-
 call plug#end()
 "}}}
 
