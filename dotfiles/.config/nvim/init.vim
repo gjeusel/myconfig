@@ -833,7 +833,7 @@ endfunction
 "}}}
 
 " Specific config in ~/.nvimrc_local
-" let g:python3_host_prog = $ HOME . "/miniconda3/envs/neovim/bin/python"
+let g:python3_host_prog = "/usr/bin/python3"
 " let g:python_host_prog = $HOME . "/miniconda3/envs/neovim27/bin/python"
 
 " local config
